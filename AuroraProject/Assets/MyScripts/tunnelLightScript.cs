@@ -10,8 +10,8 @@ public class tunnelLightScript : MonoBehaviour {
     public int count;
 	// Use this for initialization
 	void Start () {
-        StartCoroutine(doLightStuff(0, 19));
-        StartCoroutine(undoLightStuff(0, 19));
+        StartCoroutine(doLightStuff(0, 39));
+        StartCoroutine(undoLightStuff(0, 39));
 
     }
 
@@ -40,6 +40,9 @@ public class tunnelLightScript : MonoBehaviour {
                     case 3:
                         baseColor = Color.yellow;
                         break;
+                    case 4:
+                        baseColor = Color.cyan;
+                        break;
                 }
                 //create a renderer from the component to light up
                 //Make material from it, and set the emissive property on it
@@ -57,7 +60,7 @@ public class tunnelLightScript : MonoBehaviour {
                 yield return new WaitForSeconds(0.08f);
             }
             col++;
-            if (col > 3)
+            if (col > 4)
                 col = 1;
         }
     }
