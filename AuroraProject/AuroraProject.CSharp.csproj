@@ -74,6 +74,8 @@
     <Compile Include="Assets\MyScripts\GunScript.cs" />
     <Compile Include="Assets\MyScripts\autoShotScript.cs" />
     <Compile Include="Assets\MyScripts\tunnelLightScript.cs" />
+    <Compile Include="Assets\Patrick&apos;s Particle stuff\Extras\SShot.cs" />
+    <Compile Include="Assets\Scripts\Rotater.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
